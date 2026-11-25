@@ -1,0 +1,13 @@
+# TokenSpy dependencies
+#
+# Core decoding, HMAC verification, claims analysis, and reporting use
+# only the Python standard library (base64, hmac, hashlib, json, argparse).
+#
+# 'requests' is only needed for Feature 4 (the live alg:none endpoint
+# test against your own lab app). Everything else works without it.
+requests>=2.31.0
+
+# Optional: only needed to run the included lab test application
+# (tests/lab_app.py), which you can use as an authorized target to
+# demonstrate Feature 4 end to end.
+flask>=3.0.0
